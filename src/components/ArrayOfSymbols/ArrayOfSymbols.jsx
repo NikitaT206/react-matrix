@@ -9,10 +9,7 @@ export function ArrayOfSymbols() {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [loop, setLoop] = useState(true)
   const [array, setArray] = useState([...new Array(Math.floor(height / 35))])
-  const [resize, setResize] = useState(false)
   
-  // const array = useMemo(() => [...new Array(Math.floor(height / 35))], [height])
-
   const [randomIndex, setRandomIndex] = useState(Math.floor(Math.random() * array.length - 1))
   const [randomDelay, setRandomDelay] = useState(Math.floor(Math.random() * 2000 + 50))
 
@@ -40,7 +37,7 @@ export function ArrayOfSymbols() {
   }, [height])
 
   useEffect(() => {
-    const randomTimeout = Math.floor(Math.random() * 10000) 
+    const randomTimeout = Math.floor(Math.random() * 4000) 
     const timeout = setTimeout(() => {
       if (loop) {
         const randomDelay = Math.floor(Math.random() * 110 + 50)
@@ -59,12 +56,12 @@ export function ArrayOfSymbols() {
   useEffect(() => {
     setLoop(false)
     if (currentIndex >= array.length) {
-      const randomDelay = Math.floor(Math.random() * 4000 + 2000) 
+      const randomDelay = Math.floor(Math.random() * 1000 + 0) 
       setCurrentIndex(0)
       const timeout = setTimeout(() => {
         setLoop(true)
         clearTimeout(timeout)
-      }, randomDelay)
+      }, randomDelay + 2000)
     }
   }, [currentIndex, array])
 
