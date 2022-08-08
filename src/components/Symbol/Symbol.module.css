@@ -1,0 +1,30 @@
+.symbolActive {
+  color: #00ff2b;
+  font-size: 50px;
+  min-width: 30px;
+  min-height: 35px;
+  text-align: center;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  text-shadow: 0px 0px 20px rgb(229, 255, 230);
+  box-sizing: border-box;
+}
+
+.symbol {
+  comsposes: symbolActive;
+  color: #009a22;
+  text-shadow: none;
+  font-size: 50px;
+  min-width: 30px;
+  min-height: 35px;
+  text-align: center;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.simbolHidden {
+  composes: symbol;
+  transition: 1s linear;
+  color: black;
+  text-shadow: none;
+}
