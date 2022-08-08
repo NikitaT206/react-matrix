@@ -6,7 +6,7 @@
   text-align: center;
   user-select: none;
   -webkit-tap-highlight-color: transparent;
-  text-shadow: 0px 0px 20px rgb(229, 255, 230);
+  text-shadow: 0px 0px 10px rgb(229, 255, 230);
   box-sizing: border-box;
 }
 
@@ -27,4 +27,18 @@
   transition: 1s linear;
   color: black;
   text-shadow: none;
+}
+
+@media screen and (max-width: 500px) {
+  .symbolActive {
+    font-size: 40px;
+    min-width: 20px;
+    min-height: 25px;
+  }
+
+  .symbol {
+    font-size: 40px;
+    min-width: 20px;
+    min-height: 25px;
+  }
 }

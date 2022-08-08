@@ -7,7 +7,12 @@ function App() {
 
   const [width, setWidth] = useState(window.innerWidth)
 
-  const array = useMemo(() => [...new Array(Math.floor(width / 30))], [width])
+  const array = useMemo(() => {
+    if (width <= 500) {
+      return [...new Array(Math.floor(width / 25))]
+    }
+    return [...new Array(Math.floor(width / 35))]
+  } , [width])
 
   useEffect(() => {
     const resizeListener = () => {
