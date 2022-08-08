@@ -11,7 +11,7 @@ function App() {
     if (width <= 500) {
       return [...new Array(Math.floor(width / 25))]
     }
-    return [...new Array(Math.floor(width / 35))]
+    return [...new Array(Math.floor(width / 34))]
   } , [width])
 
   useEffect(() => {
