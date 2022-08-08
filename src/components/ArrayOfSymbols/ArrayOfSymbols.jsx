@@ -9,6 +9,7 @@ export function ArrayOfSymbols() {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [loop, setLoop] = useState(true)
   const [array, setArray] = useState([...new Array(Math.floor(height / 35))])
+  const [resize, setResize] = useState(false)
   
   const [randomIndex, setRandomIndex] = useState(Math.floor(Math.random() * array.length - 1))
   const [randomDelay, setRandomDelay] = useState(Math.floor(Math.random() * 2000 + 50))
@@ -24,7 +25,8 @@ export function ArrayOfSymbols() {
     const resizeListener = () => {
       setTimeout(() => {
         setHeight(window.innerHeight)
-      }, 1000)
+        setResize(true)
+      }, 0)
     }
     window.addEventListener('resize', resizeListener)
     return () => {
@@ -33,8 +35,10 @@ export function ArrayOfSymbols() {
   }, [])
 
   useEffect(() => {
-    setArray([...new Array(Math.floor(height / 35))])
-  }, [height])
+    if (resize) {
+      window.location.reload()
+    }
+  }, [resize])
 
   useEffect(() => {
     const randomTimeout = Math.floor(Math.random() * 4000) 
@@ -51,7 +55,7 @@ export function ArrayOfSymbols() {
       clearTimeout(timeout)
     }, randomTimeout)
    
-  }, [loop, array])
+  }, [loop])
 
   useEffect(() => {
     setLoop(false)
@@ -63,7 +67,7 @@ export function ArrayOfSymbols() {
         clearTimeout(timeout)
       }, randomDelay + 2000)
     }
-  }, [currentIndex, array])
+  }, [currentIndex])
 
   return (
     <div className={styles.array}>
