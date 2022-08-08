@@ -13,13 +13,16 @@
 .symbol {
   comsposes: symbolActive;
   color: #009a22;
-  text-shadow: none;
   font-size: 50px;
   min-width: 30px;
   min-height: 35px;
   text-align: center;
   user-select: none;
   -webkit-tap-highlight-color: transparent;
+  text-shadow: 0 0 5px green;
+  transition: .1s ease-in-out;
+
+
 }
 
 .simbolHidden {
