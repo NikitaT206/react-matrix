@@ -3,19 +3,14 @@
   "name": "Matrix",
   "icons": [
     {
-      "src": "matrix.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "src": "matrixico.png",
+      "sizes": "128x128",
+      "type": "image/png"
     },
     {
-      "src": "matrix.png",
+      "src": "matrix2.png",
       "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "matrix.png",
-      "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "1341x1635"
     }
   ],
   "start_url": ".",
