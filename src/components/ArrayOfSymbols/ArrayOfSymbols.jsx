@@ -1,14 +1,13 @@
 import styles from './ArrayOfSymbols.module.css'
-import { useState, useEffect, useMemo } from 'react'
+import { useState, useEffect } from 'react'
 import { Symbol } from '../Symbol/Symbol'
-import { arrayOfSymbols } from '../../constants'
 
 export function ArrayOfSymbols() {
 
   const [height, setHeight] = useState(window.innerHeight)
   const [currentIndex, setCurrentIndex] = useState(0)
   const [loop, setLoop] = useState(true)
-  const [array, setArray] = useState([...new Array(Math.floor(height / 35))])
+  const [array, setArray] = useState([...new Array(Math.floor(height / 30))])
   const [resize, setResize] = useState(false)
   
   const [randomIndex, setRandomIndex] = useState(Math.floor(Math.random() * array.length - 1))

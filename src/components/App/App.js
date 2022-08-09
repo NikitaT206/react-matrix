@@ -1,6 +1,5 @@
 import styles from './App.module.css';
 import { useEffect, useMemo, useState } from 'react';
-import { Symbol } from '../Symbol/Symbol';
 import { ArrayOfSymbols } from '../ArrayOfSymbols/ArrayOfSymbols';
 
 function App() {

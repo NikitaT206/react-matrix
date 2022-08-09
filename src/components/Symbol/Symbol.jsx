@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import styles from './Symbol.module.css'
 import { arrayOfSymbols } from '../../constants'
 
-export function Symbol({index, currentIndex, loop, arr, randomIndex, randomDelay, item}) {
+export function Symbol({index, currentIndex, loop, arr, randomIndex, randomDelay}) {
   const [firstLetter, setFirstLetter] = useState(false)
   const [hide, setHide] = useState(true)
   const [randomSymbol, setRandomSymbol] = useState(arrayOfSymbols[Math.floor(Math.random() * arrayOfSymbols.length)])
