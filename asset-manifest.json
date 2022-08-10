@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/react-matrix/static/css/main.286f7906.css",
-    "main.js": "/react-matrix/static/js/main.df168a5e.js",
+    "main.css": "/react-matrix/static/css/main.f5ead532.css",
+    "main.js": "/react-matrix/static/js/main.87049f56.js",
     "static/js/787.5233302a.chunk.js": "/react-matrix/static/js/787.5233302a.chunk.js",
     "static/media/matrixcodenfi.ttf": "/react-matrix/static/media/matrixcodenfi.77b36b5eb15b0d99bd9a.ttf",
     "index.html": "/react-matrix/index.html",
-    "main.286f7906.css.map": "/react-matrix/static/css/main.286f7906.css.map",
-    "main.df168a5e.js.map": "/react-matrix/static/js/main.df168a5e.js.map",
+    "main.f5ead532.css.map": "/react-matrix/static/css/main.f5ead532.css.map",
+    "main.87049f56.js.map": "/react-matrix/static/js/main.87049f56.js.map",
     "787.5233302a.chunk.js.map": "/react-matrix/static/js/787.5233302a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.286f7906.css",
-    "static/js/main.df168a5e.js"
+    "static/css/main.f5ead532.css",
+    "static/js/main.87049f56.js"
   ]
 }
