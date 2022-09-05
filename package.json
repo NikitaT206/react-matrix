@@ -1,6 +1,5 @@
 {
   "name": "matrix-react",
-  "homepage": "https://nikitat206.github.io/react-matrix",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -18,7 +17,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploygh": "gh-pages -d build",
+    "deploy": "npm run build && scp -r ./build/* gallery@130.193.37.170:/home/gallery/matrix"
   },
   "eslintConfig": {
     "extends": [

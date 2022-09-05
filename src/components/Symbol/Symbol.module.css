@@ -2,13 +2,39 @@
   color: #00ff2b;
   font-size: 50px;
   min-width: 30px;
-  min-height: 35px;
+  min-height: 30px;
   max-height: 30px;
   text-align: center;
   user-select: none;
   -webkit-tap-highlight-color: transparent;
   text-shadow: 0px 0px 10px rgb(229, 255, 230);
   box-sizing: border-box;
+}
+
+.redActive {
+  font-size: 50px;
+  min-width: 30px;
+  min-height: 30px;
+  max-height: 30px;
+  text-align: center;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+  text-shadow: 0px 0px 10px rgb(252, 94, 94);
+  color: red;
+}
+
+.blueActive {
+  font-size: 50px;
+  min-width: 30px;
+  min-height: 30px;
+  max-height: 30px;
+  text-align: center;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+  text-shadow: 0px 0px 15px rgb(0, 12, 248);
+  color: rgb(34, 103, 253);
 }
 
 .symbol {
@@ -24,8 +50,52 @@
   transition: .1s ease-in-out;
 }
 
+.red {
+  composes: redActive;
+  font-size: 50px;
+  min-width: 30px;
+  min-height: 30px;
+  max-height: 30px;
+  text-align: center;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: .1s ease-in-out;
+  text-shadow: none;
+  color: rgb(172, 0, 0);
+}
+
+.blue {
+  composes: blueActive;
+  font-size: 50px;
+  min-width: 30px;
+  min-height: 30px;
+  max-height: 30px;
+  text-align: center;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: .1s ease-in-out;
+  color: rgb(18, 18, 126);
+  text-shadow: none;
+}
+
 .simbolHidden {
   composes: symbol;
+  transition: 1s linear;
+  opacity: 0;
+  visibility: hidden;
+  text-shadow: none;
+}
+
+.redHidden {
+  composes: red;
+  transition: 1s linear;
+  opacity: 0;
+  visibility: hidden;
+  text-shadow: none;
+}
+
+.blueHidden {
+  composes: blue;
   transition: 1s linear;
   opacity: 0;
   visibility: hidden;
@@ -40,6 +110,30 @@
   }
 
   .symbol {
+    font-size: 40px;
+    min-width: 20px;
+    min-height: 25px;
+  }
+
+  .redActive {
+    font-size: 40px;
+    min-width: 20px;
+    min-height: 25px;
+  }
+
+  .blueActive {
+    font-size: 40px;
+    min-width: 20px;
+    min-height: 25px;
+  }
+
+  .blue {
+    font-size: 40px;
+    min-width: 20px;
+    min-height: 25px;
+  }
+
+  .red {
     font-size: 40px;
     min-width: 20px;
     min-height: 25px;
